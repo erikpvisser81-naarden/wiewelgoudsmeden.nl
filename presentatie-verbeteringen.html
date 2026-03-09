@@ -315,16 +315,18 @@
 
     <div class="compare">
       <div class="compare-card compare-card--old">
-        <div class="compare-label">Oude site</div>
+        <div class="compare-label">Huidige site</div>
         <ul class="checklist">
-          <li><span class="icon-no">&times;</span> <span class="label">Paginatitel:</span> Alleen "Wiewel Goudsmeden"</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Beschrijving voor Google:</span> Ontbreekt</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Voorbeeldplaatje bij delen:</span> Ontbreekt</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Bedrijfsinfo voor Google:</span> Ontbreekt</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Sitemap (plattegrond):</span> Ontbreekt</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Robots.txt (instructies voor Google):</span> Ontbreekt</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Elke pagina eigen adres (canonical):</span> Nee</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Productpagina's voor sieraden:</span> Nee</li>
+          <li><span class="icon-yes">&check;</span> <span class="label">Paginatitel:</span> Aanwezig (via WordPress)</li>
+          <li><span class="icon-yes">&check;</span> <span class="label">Beschrijving voor Google:</span> Aanwezig (Yoast SEO)</li>
+          <li><span class="icon-no">&times;</span> <span class="label">Voorbeeldplaatje bij delen:</span> Geen OG/Twitter tags</li>
+          <li><span class="icon-no">&times;</span> <span class="label">Bedrijfsinfo voor Google:</span> Geen "Juwelier" schema met adres/openingstijden</li>
+          <li><span class="icon-yes">&check;</span> <span class="label">Sitemap:</span> Aanwezig (Yoast)</li>
+          <li><span class="icon-yes">&check;</span> <span class="label">Robots.txt:</span> Aanwezig</li>
+          <li><span class="icon-no">&times;</span> <span class="label">Elke pagina eigen adres (canonical):</span> Ontbreekt</li>
+          <li><span class="icon-no">&times;</span> <span class="label">Cookie-melding (wettelijk verplicht):</span> Ontbreekt! (maar Hotjar + GA zijn actief)</li>
+          <li><span class="icon-no">&times;</span> <span class="label">Google Analytics:</span> Verouderd (UA, stopt sinds juli 2023, geen data meer)</li>
+          <li><span class="icon-no">&times;</span> <span class="label">Productpagina's met schema:</span> Geen Product schema per sieraad</li>
         </ul>
       </div>
       <div class="compare-card compare-card--new">
@@ -379,9 +381,33 @@
       </div>
     </div>
 
+    <div class="compare" style="margin-top:40px;">
+      <div class="compare-card compare-card--old">
+        <div class="compare-label">Huidige site</div>
+        <ul class="checklist">
+          <li><span class="icon-no">&times;</span> Lettertypen via Google CDN (extra wachttijd)</li>
+          <li><span class="icon-no">&times;</span> Alle afbeeldingen laden direct (langzaam)</li>
+          <li><span class="icon-no">&times;</span> Geen vooraf laden van belangrijke bestanden</li>
+          <li><span class="icon-no">&times;</span> WordPress overhead (veel ongebruikte code)</li>
+          <li><span class="icon-no">&times;</span> Google Analytics verouderd (geen data meer)</li>
+        </ul>
+      </div>
+      <div class="compare-card compare-card--new">
+        <div class="compare-label">Nieuwe site</div>
+        <ul class="checklist">
+          <li><span class="icon-yes">&check;</span> Lettertypen op eigen server (sneller)</li>
+          <li><span class="icon-yes">&check;</span> Afbeeldingen laden pas bij scrollen</li>
+          <li><span class="icon-yes">&check;</span> Kritieke bestanden worden vooraf geladen</li>
+          <li><span class="icon-yes">&check;</span> Geen WordPress, puur handgeschreven code</li>
+          <li><span class="icon-yes">&check;</span> Moderne analytics (GA4 + Clarity)</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="cta-block">
       <h3>Resultaat</h3>
       <p>De nieuwe site laadt merkbaar sneller, vooral op telefoons met een minder sterk signaal. Google beloont snelle sites met een hogere positie in de zoekresultaten.</p>
+      <p style="margin-top:12px; font-size:0.85rem; color:#888;">Test het zelf: open <a href="https://pagespeed.web.dev" target="_blank" style="color:#cea057;">pagespeed.web.dev</a> en vergelijk beide sites.</p>
     </div>
   </div>
 </section>
