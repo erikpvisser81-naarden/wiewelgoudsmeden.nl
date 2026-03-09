@@ -1685,6 +1685,8 @@ body { padding-top: 72px; }
   .hero--split {
     grid-template-columns: 1fr;
     min-height: auto;
+    height: auto !important;
+    overflow: visible !important;
   }
   .hero__text-panel {
     background: #fff;
@@ -1729,13 +1731,22 @@ body { padding-top: 72px; }
     border-color: #363c57;
   }
   .hero__image-panel {
-    height: auto;
+    height: auto !important;
+    overflow: visible !important;
     order: 1;
   }
   .hero__image-panel img {
-    width: 100%;
+    width: 100% !important;
     height: auto !important;
     object-fit: unset !important;
+    object-position: unset !important;
+  }
+  .hero--split {
+    margin-bottom: 0;
+  }
+  .hero--split + .trust-bar + .section,
+  .hero--split + .section {
+    margin-top: 32px;
   }
   .trust-bar { display: none; }
   .hero--about { height: clamp(280px, 40vh, 400px); }
