@@ -1729,13 +1729,13 @@ body { padding-top: 72px; }
     border-color: #363c57;
   }
   .hero__image-panel {
-    height: 32vw;
-    min-height: 140px;
-    max-height: 200px;
+    height: auto;
     order: 1;
   }
   .hero__image-panel img {
-    object-position: center top;
+    height: auto;
+    object-fit: contain;
+    max-height: 220px;
   }
   .trust-bar { display: none; }
   .hero--about { height: clamp(280px, 40vh, 400px); }
