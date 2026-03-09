@@ -1668,7 +1668,7 @@ body { padding-top: 72px; }
   }
   .hero__text-panel {
     background: #fff;
-    padding: 32px 24px 36px;
+    padding: 20px 24px 24px;
     order: 2;
   }
   .hero--split .hero__content {
@@ -1676,32 +1676,42 @@ body { padding-top: 72px; }
     margin: 0;
     text-align: center;
   }
-  .hero--split .hero__content h1 {
-    color: #cea057;
-    font-size: 1.6rem;
-    margin-bottom: 12px;
-  }
-  .hero--split .hero__content .hero__sub {
-    color: #444;
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-  }
   .hero--split .hero__content .hero__badge {
     color: #363c57;
     background: rgba(54,60,87,0.08);
     border-color: rgba(54,60,87,0.2);
+    margin-bottom: 8px;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+  }
+  .hero--split .hero__content h1 {
+    color: #cea057;
+    font-size: 1.45rem;
+    margin-bottom: 8px;
+    line-height: 1.25;
+  }
+  .hero--split .hero__content .hero__sub {
+    color: #444;
+    font-size: 0.88rem;
+    margin-bottom: 16px;
+    line-height: 1.5;
   }
   .hero--split .hero__ctas {
     justify-content: center;
+    gap: 10px;
+  }
+  .hero--split .hero__ctas .btn {
+    padding: 10px 20px;
+    font-size: 0.88rem;
   }
   .hero--split .hero__ctas .btn--outline {
     color: #363c57;
     border-color: #363c57;
   }
   .hero__image-panel {
-    height: 55vw;
-    min-height: 240px;
-    max-height: 400px;
+    height: 35vw;
+    min-height: 140px;
+    max-height: 220px;
     order: 1;
   }
   .trust-bar { display: none; }
