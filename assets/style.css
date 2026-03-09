@@ -1709,10 +1709,13 @@ body { padding-top: 72px; }
     border-color: #363c57;
   }
   .hero__image-panel {
-    height: 28vw;
-    min-height: 120px;
-    max-height: 180px;
+    height: 32vw;
+    min-height: 140px;
+    max-height: 200px;
     order: 1;
+  }
+  .hero__image-panel img {
+    object-position: center 30%;
   }
   .trust-bar { display: none; }
   .hero--about { height: clamp(280px, 40vh, 400px); }
