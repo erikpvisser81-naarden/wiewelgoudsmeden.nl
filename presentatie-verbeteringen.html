@@ -28,60 +28,37 @@
   .logo-mark { width: 80px; height: 80px; border-radius: 50%; background: rgba(206,160,87,0.1); border: 2px solid rgba(206,160,87,0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 32px; font-size: 2rem; color: #cea057; font-weight: 700; }
 
   /* Section headers */
-  .slide h2 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); color: #fff; margin-bottom: 32px; }
+  .slide h2 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); color: #fff; margin-bottom: 24px; }
   .slide h2 span { color: #cea057; }
-  .slide h3 { font-size: 1.1rem; color: #cea057; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+  .slide h3 { font-size: 1rem; color: #cea057; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
 
   /* Comparison grid */
-  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; }
-  .compare-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 28px; }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+  .compare-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; }
   .compare-card--old { border-color: rgba(220,60,60,0.2); }
   .compare-card--old .compare-label { color: #e05555; }
   .compare-card--new { border-color: rgba(80,200,120,0.2); }
   .compare-card--new .compare-label { color: #50c878; }
-  .compare-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .compare-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
   .compare-label::before { content: ''; width: 8px; height: 8px; border-radius: 50%; }
   .compare-card--old .compare-label::before { background: #e05555; }
   .compare-card--new .compare-label::before { background: #50c878; }
 
-  /* Feature list */
-  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
-  .feature { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 24px; }
-  .feature-icon { font-size: 1.5rem; margin-bottom: 12px; }
-  .feature h4 { color: #fff; font-size: 1rem; margin-bottom: 6px; }
-  .feature p { font-size: 0.85rem; color: #999; }
-
-  /* Score bars */
-  .scores { margin: 24px 0; }
-  .score-row { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
-  .score-label { width: 140px; font-size: 0.85rem; color: #ccc; flex-shrink: 0; }
-  .score-bars { flex: 1; display: flex; gap: 8px; align-items: center; }
-  .score-bar-wrap { flex: 1; height: 32px; background: rgba(255,255,255,0.05); border-radius: 8px; overflow: hidden; position: relative; }
-  .score-bar { height: 100%; border-radius: 8px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; font-size: 0.75rem; font-weight: 700; color: #fff; transition: width 1s ease; }
-  .score-bar--old { background: linear-gradient(90deg, #8b3a3a, #c74b4b); }
-  .score-bar--new { background: linear-gradient(90deg, #2d7a4f, #50c878); }
-  .score-bar--warn { background: linear-gradient(90deg, #8b6a2a, #c7a04b); }
-  .score-legend { display: flex; gap: 20px; margin-bottom: 20px; font-size: 0.8rem; }
-  .score-legend span { display: flex; align-items: center; gap: 6px; }
-  .score-legend span::before { content: ''; width: 12px; height: 12px; border-radius: 3px; }
-  .score-legend .old::before { background: #c74b4b; }
-  .score-legend .new::before { background: #50c878; }
-
   /* Checklist */
-  .checklist { list-style: none; margin: 20px 0; }
-  .checklist li { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; }
+  .checklist { list-style: none; margin: 12px 0; }
+  .checklist li { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; }
   .checklist .icon-yes { color: #50c878; font-weight: 700; font-size: 1.1rem; }
   .checklist .icon-no { color: #e05555; font-weight: 700; font-size: 1.1rem; }
   .checklist .label { color: #999; }
 
   /* Stats strip */
   .stats { display: flex; gap: 16px; margin: 24px 0; flex-wrap: wrap; }
-  .stat { background: rgba(206,160,87,0.06); border: 1px solid rgba(206,160,87,0.15); border-radius: 12px; padding: 20px 24px; flex: 1; min-width: 140px; text-align: center; }
-  .stat-number { font-size: 2rem; font-weight: 700; color: #cea057; }
-  .stat-label { font-size: 0.75rem; color: #999; margin-top: 4px; }
+  .stat { background: rgba(206,160,87,0.06); border: 1px solid rgba(206,160,87,0.15); border-radius: 12px; padding: 16px 20px; flex: 1; min-width: 120px; text-align: center; }
+  .stat-number { font-size: 1.8rem; font-weight: 700; color: #cea057; }
+  .stat-label { font-size: 0.7rem; color: #999; margin-top: 4px; }
 
   /* Iframe compare */
-  .site-frames { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; }
+  .site-frames { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
   .site-frame { border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
   .site-frame-label { background: rgba(255,255,255,0.05); padding: 10px 16px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; text-align: center; }
   .site-frame-label--old { color: #e05555; }
@@ -89,23 +66,21 @@
   .site-frame iframe { width: 100%; height: 600px; border: none; background: #fff; }
 
   /* CTA */
-  .cta-block { text-align: center; margin-top: 40px; padding: 40px; background: rgba(206,160,87,0.06); border: 1px solid rgba(206,160,87,0.15); border-radius: 16px; }
-  .cta-block h3 { color: #fff; font-size: 1.3rem; margin-bottom: 8px; text-transform: none; letter-spacing: 0; }
-  .cta-block p { color: #999; margin-bottom: 0; }
+  .cta-block { text-align: center; margin-top: 32px; padding: 32px; background: rgba(206,160,87,0.06); border: 1px solid rgba(206,160,87,0.15); border-radius: 16px; }
+  .cta-block h3 { color: #fff; font-size: 1.2rem; margin-bottom: 8px; text-transform: none; letter-spacing: 0; }
+  .cta-block p { color: #999; margin-bottom: 0; font-size: 0.9rem; }
 
   /* Improvements list */
-  .improvements { margin: 24px 0; }
-  .improvement { display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-  .improvement-num { width: 40px; height: 40px; border-radius: 50%; background: rgba(206,160,87,0.1); border: 1px solid rgba(206,160,87,0.3); display: flex; align-items: center; justify-content: center; font-weight: 700; color: #cea057; flex-shrink: 0; font-size: 0.85rem; }
-  .improvement h4 { color: #fff; margin-bottom: 4px; }
-  .improvement p { font-size: 0.88rem; color: #999; margin: 0; }
+  .improvements { margin: 16px 0; }
+  .improvement { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .improvement-num { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.8rem; background: rgba(80,200,120,0.1); border: 1px solid rgba(80,200,120,0.3); color: #50c878; }
+  .improvement h4 { color: #fff; margin-bottom: 2px; font-size: 0.95rem; }
+  .improvement p { font-size: 0.82rem; color: #999; margin: 0; }
 
   /* Mobile */
   @media (max-width: 768px) {
-    .compare, .features, .site-frames { grid-template-columns: 1fr; }
+    .compare, .site-frames { grid-template-columns: 1fr; }
     .stats { flex-direction: column; }
-    .score-row { flex-direction: column; align-items: flex-start; gap: 8px; }
-    .score-label { width: auto; }
     .slide { padding: 70px 16px 40px; }
   }
 </style>
@@ -118,10 +93,10 @@
   <a href="#overzicht">Overzicht</a>
   <a href="#mobiel">Mobiel</a>
   <a href="#collectie">Collectie</a>
-  <a href="#seo">SEO</a>
+  <a href="#seo">Google</a>
   <a href="#snelheid">Snelheid</a>
-  <a href="#conversie">Meer klanten</a>
-  <a href="#vergelijk">Vergelijk live</a>
+  <a href="#conversie">Productpagina's</a>
+  <a href="#vergelijk">Screenshots</a>
   <a href="#samenvatting">Samenvatting</a>
 </nav>
 
@@ -130,8 +105,8 @@
   <div class="slide-inner">
     <div class="logo-mark">W</div>
     <h1>Website <span>Verbeteringen</span></h1>
-    <p class="subtitle">Wat we hebben veranderd aan wiewelgoudsmeden.nl<br>en waarom het belangrijk is</p>
-    <p class="meta">Maart 2026 &middot; Overzicht voor Thijs Wiewel</p>
+    <p class="subtitle">Wat we hebben veranderd en waarom</p>
+    <p class="meta">Maart 2026 &middot; Voor Thijs Wiewel</p>
   </div>
 </section>
 
@@ -139,82 +114,49 @@
 <section class="slide" id="overzicht">
   <div class="slide-inner">
     <h3>In het kort</h3>
-    <h2>Wat is er <span>veranderd?</span></h2>
-
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-number">99</div>
-        <div class="stat-label">Pagina's totaal</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">91</div>
-        <div class="stat-label">Sieraden online</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">8</div>
-        <div class="stat-label">Hoofdpagina's</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">7</div>
-        <div class="stat-label">Categorie&euml;n</div>
-      </div>
-    </div>
+    <h2>6 verbeteringen op <span>een rij</span></h2>
 
     <div class="improvements">
       <div class="improvement">
         <div class="improvement-num">1</div>
         <div>
-          <h4>Mobiele versie volledig vernieuwd</h4>
-          <p>De website werkt nu perfect op telefoons en tablets. Menu, knoppen en foto's passen zich aan aan elk scherm.</p>
+          <h4>Mobiel volledig vernieuwd</h4>
+          <p>Hero, menu en knoppen werken nu goed op telefoons en tablets.</p>
         </div>
       </div>
       <div class="improvement">
         <div class="improvement-num">2</div>
         <div>
-          <h4>Collectie filter toegevoegd</h4>
-          <p>Bezoekers kunnen nu filteren op categorie (Ringen, Oorbellen, Colliers, etc.) in plaats van eindeloos scrollen.</p>
+          <h4>Collectie filter vereenvoudigd</h4>
+          <p>Alle sieraden op &eacute;&eacute;n pagina met sticky categorie-knoppen. Geen paginering meer.</p>
         </div>
       </div>
       <div class="improvement">
         <div class="improvement-num">3</div>
         <div>
           <h4>Beter vindbaar in Google</h4>
-          <p>Elke pagina heeft nu de juiste technische instellingen zodat Google de website goed kan lezen en tonen.</p>
+          <p>Juwelier-schema, OG tags en Product-schema toegevoegd. Google kan je beter tonen.</p>
         </div>
       </div>
       <div class="improvement">
         <div class="improvement-num">4</div>
         <div>
-          <h4>Snellere website</h4>
-          <p>Lettertypen worden nu direct geladen (niet via externe servers). Afbeeldingen laden slim mee. De site voelt snapper.</p>
+          <h4>4x snellere website</h4>
+          <p>Geen WordPress meer. Puur handgeschreven code. Laadt in 4,7 seconden ipv 19,5.</p>
         </div>
       </div>
       <div class="improvement">
         <div class="improvement-num">5</div>
         <div>
-          <h4>Cookie melding (AVG/GDPR)</h4>
-          <p>Verplichte cookie melding toegevoegd. Bezoekers kiezen zelf of ze cookies accepteren. Dit is wettelijk verplicht.</p>
+          <h4>Cookie-melding (wettelijk verplicht)</h4>
+          <p>De huidige site gebruikt Hotjar + Google Analytics zonder toestemming te vragen. Dat mag niet.</p>
         </div>
       </div>
       <div class="improvement">
         <div class="improvement-num">6</div>
         <div>
-          <h4>Duidelijkere knoppen</h4>
-          <p>"Plan een afspraak" en "Bekijk de collectie" zijn nu altijd zichtbaar. Bezoekers weten direct wat ze kunnen doen.</p>
-        </div>
-      </div>
-      <div class="improvement">
-        <div class="improvement-num">7</div>
-        <div>
-          <h4>Slim menu dat meeschuift</h4>
-          <p>De bovenbalk verdwijnt als je naar beneden scrollt (meer ruimte voor inhoud) en verschijnt weer als je omhoog scrollt.</p>
-        </div>
-      </div>
-      <div class="improvement">
-        <div class="improvement-num">8</div>
-        <div>
-          <h4>Privacyverklaring</h4>
-          <p>Professionele privacypagina toegevoegd. Belangrijk voor vertrouwen en wettelijk verplicht.</p>
+          <h4>"Plan een afspraak" altijd zichtbaar</h4>
+          <p>Op elke pagina, op elk apparaat. Bezoekers hoeven niet te zoeken.</p>
         </div>
       </div>
     </div>
@@ -225,36 +167,28 @@
 <section class="slide" id="mobiel">
   <div class="slide-inner">
     <h3>Mobiele ervaring</h3>
-    <h2>Meer dan 60% van je bezoekers <span>zit op een telefoon</span></h2>
+    <h2>60%+ van je bezoekers <span>zit op een telefoon</span></h2>
 
     <div class="compare">
       <div class="compare-card compare-card--old">
-        <div class="compare-label">Voorheen</div>
+        <div class="compare-label">Huidige site</div>
         <ul class="checklist">
-          <li><span class="icon-no">&times;</span> Foto neemt heel scherm in, tekst valt weg</li>
-          <li><span class="icon-no">&times;</span> "Plan een afspraak" knop niet zichtbaar</li>
-          <li><span class="icon-no">&times;</span> Trust-balk duwt belangrijke tekst weg</li>
+          <li><span class="icon-no">&times;</span> Hero: donkerblauw vlak, foto niet zichtbaar</li>
+          <li><span class="icon-no">&times;</span> "Plan een afspraak" knop niet in beeld</li>
           <li><span class="icon-no">&times;</span> Hamburger menu staat links (ongebruikelijk)</li>
-          <li><span class="icon-no">&times;</span> Menu opent zonder animatie</li>
-          <li><span class="icon-no">&times;</span> Knoppen soms te klein om te tikken</li>
+          <li><span class="icon-no">&times;</span> Trust-balk duwt tekst uit beeld</li>
         </ul>
       </div>
       <div class="compare-card compare-card--new">
-        <div class="compare-label">Nu</div>
+        <div class="compare-label">Nieuwe site</div>
         <ul class="checklist">
           <li><span class="icon-yes">&check;</span> Foto bovenaan, tekst eronder op wit</li>
           <li><span class="icon-yes">&check;</span> Beide knoppen direct zichtbaar</li>
-          <li><span class="icon-yes">&check;</span> Trust-balk verborgen op mobiel (staat al in footer)</li>
-          <li><span class="icon-yes">&check;</span> Hamburger menu rechts (standaard plek)</li>
-          <li><span class="icon-yes">&check;</span> Vloeiende slide-in animatie + X-icoon</li>
-          <li><span class="icon-yes">&check;</span> Alle knoppen minimaal 44px (Apple richtlijn)</li>
+          <li><span class="icon-yes">&check;</span> Hamburger menu rechts (standaard)</li>
+          <li><span class="icon-yes">&check;</span> Trust-balk verborgen op mobiel</li>
         </ul>
       </div>
     </div>
-
-    <p style="color:#888; font-size:0.85rem; text-align:center; margin-top:16px;">
-      &darr; Scroll naar "Vergelijk live" om beide versies naast elkaar te zien
-    </p>
   </div>
 </section>
 
@@ -262,46 +196,31 @@
 <section class="slide" id="collectie">
   <div class="slide-inner">
     <h3>Collectie pagina</h3>
-    <h2>91 sieraden, nu <span>makkelijk doorzoekbaar</span></h2>
+    <h2>Sieraden <span>sneller vinden</span></h2>
 
     <div class="compare">
       <div class="compare-card compare-card--old">
-        <div class="compare-label">Voorheen</div>
+        <div class="compare-label">Huidige site</div>
         <ul class="checklist">
-          <li><span class="icon-no">&times;</span> Alle 91 sieraden op &eacute;&eacute;n lange pagina</li>
-          <li><span class="icon-no">&times;</span> Categorie-knoppen scrollden alleen naar een plek</li>
-          <li><span class="icon-no">&times;</span> Geen manier om te filteren</li>
-          <li><span class="icon-no">&times;</span> Op mobiel: categorie-balk loopt af, niet scrollbaar</li>
+          <li><span class="icon-yes">&check;</span> ~295 sieraden met eigen pagina's</li>
+          <li><span class="icon-yes">&check;</span> WooCommerce filters (categorie, edelsteen, materiaal)</li>
+          <li><span class="icon-no">&times;</span> Paginering: 12 per pagina, 25 pagina's doorklikken</li>
+          <li><span class="icon-no">&times;</span> Filters zijn dropdown-menu's (niet visueel)</li>
         </ul>
       </div>
       <div class="compare-card compare-card--new">
-        <div class="compare-label">Nu</div>
+        <div class="compare-label">Nieuwe site</div>
         <ul class="checklist">
-          <li><span class="icon-yes">&check;</span> "Alles" knop + 7 categorie-filters</li>
-          <li><span class="icon-yes">&check;</span> Klik op "Ringen" &rarr; je ziet alleen ringen</li>
-          <li><span class="icon-yes">&check;</span> Filter-balk blijft bovenaan plakken bij scrollen</li>
-          <li><span class="icon-yes">&check;</span> Op mobiel: horizontaal scrollbare categorie-balk</li>
-          <li><span class="icon-yes">&check;</span> Direct filteren via link mogelijk (bijv. collectie.html#ringen)</li>
+          <li><span class="icon-yes">&check;</span> 91 sieraden met eigen pagina's</li>
+          <li><span class="icon-yes">&check;</span> Visuele categorie-knoppen (1 klik = alleen die categorie)</li>
+          <li><span class="icon-yes">&check;</span> Alles op &eacute;&eacute;n pagina, geen paginering</li>
+          <li><span class="icon-yes">&check;</span> Sticky filterbalk: blijft bovenaan bij scrollen</li>
         </ul>
       </div>
     </div>
 
-    <div class="features" style="grid-template-columns: 1fr 1fr 1fr;">
-      <div class="feature">
-        <div class="feature-icon">💍</div>
-        <h4>23 Ringen</h4>
-        <p>Van solitair tot cocktailringen</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">✨</div>
-        <h4>28 Oorbellen</h4>
-        <p>Oorstekers, creolen, oorhaken</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">📿</div>
-        <h4>18 Colliers</h4>
-        <p>Parelkettingen, edelsteen colliers</p>
-      </div>
+    <div class="cta-block">
+      <p>De huidige site heeft meer producten. De nieuwe site maakt het makkelijker om te vinden wat je zoekt.</p>
     </div>
   </div>
 </section>
@@ -310,43 +229,33 @@
 <section class="slide" id="seo">
   <div class="slide-inner">
     <h3>Vindbaarheid in Google</h3>
-    <h2>Wat Google nodig heeft om je <span>website te tonen</span></h2>
-    <p style="color:#999; margin-bottom:32px;">Google beoordeelt websites op tientallen punten. Hieronder de belangrijkste, en hoe de nieuwe site scoort.</p>
+    <h2>Wat Google <span>nodig heeft</span></h2>
 
     <div class="compare">
       <div class="compare-card compare-card--old">
         <div class="compare-label">Huidige site</div>
         <ul class="checklist">
-          <li><span class="icon-yes">&check;</span> <span class="label">Paginatitel:</span> Aanwezig (via WordPress)</li>
-          <li><span class="icon-yes">&check;</span> <span class="label">Beschrijving voor Google:</span> Aanwezig (Yoast SEO)</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Voorbeeldplaatje bij delen:</span> Geen OG/Twitter tags</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Bedrijfsinfo voor Google:</span> Geen "Juwelier" schema met adres/openingstijden</li>
-          <li><span class="icon-yes">&check;</span> <span class="label">Sitemap:</span> Aanwezig (Yoast)</li>
-          <li><span class="icon-yes">&check;</span> <span class="label">Robots.txt:</span> Aanwezig</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Elke pagina eigen adres (canonical):</span> Ontbreekt</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Cookie-melding (wettelijk verplicht):</span> Ontbreekt! (maar Hotjar + GA zijn actief)</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Google Analytics:</span> Verouderd (UA, stopt sinds juli 2023, geen data meer)</li>
-          <li><span class="icon-no">&times;</span> <span class="label">Productpagina's met schema:</span> Geen Product schema per sieraad</li>
+          <li><span class="icon-yes">&check;</span> Paginatitel + beschrijving (Yoast)</li>
+          <li><span class="icon-yes">&check;</span> Sitemap + robots.txt</li>
+          <li><span class="icon-yes">&check;</span> ~508 pagina's in Google</li>
+          <li><span class="icon-no">&times;</span> Geen deelplaatje (OG/Twitter tags)</li>
+          <li><span class="icon-no">&times;</span> Geen "Juwelier" schema (adres, openingstijden)</li>
+          <li><span class="icon-no">&times;</span> Geen cookie-melding (verplicht bij Hotjar + GA)</li>
+          <li><span class="icon-no">&times;</span> Google Analytics verouderd (geen data sinds juli 2023)</li>
         </ul>
       </div>
       <div class="compare-card compare-card--new">
         <div class="compare-label">Nieuwe site</div>
         <ul class="checklist">
-          <li><span class="icon-yes">&check;</span> <span class="label">Paginatitel:</span> "Wiewel Goudsmeden Schoonhoven | Handgemaakte Sieraden"</li>
-          <li><span class="icon-yes">&check;</span> <span class="label">Beschrijving voor Google:</span> Op elke pagina</li>
-          <li><span class="icon-yes">&check;</span> <span class="label">Voorbeeldplaatje bij delen:</span> OG + Twitter tags</li>
-          <li><span class="icon-yes">&check;</span> <span class="label">Bedrijfsinfo voor Google:</span> Schema.org "Jeweler" met adres, tel, openingstijden</li>
-          <li><span class="icon-yes">&check;</span> <span class="label">Sitemap:</span> Alle 99 pagina's aangemeld</li>
-          <li><span class="icon-yes">&check;</span> <span class="label">Robots.txt:</span> Aanwezig</li>
-          <li><span class="icon-yes">&check;</span> <span class="label">Canonical URL:</span> Op elke pagina</li>
-          <li><span class="icon-yes">&check;</span> <span class="label">91 productpagina's:</span> Elk sieraad eigen pagina met Product schema</li>
+          <li><span class="icon-yes">&check;</span> Paginatitel + beschrijving op elke pagina</li>
+          <li><span class="icon-yes">&check;</span> Sitemap (99 pagina's) + robots.txt</li>
+          <li><span class="icon-yes">&check;</span> Deelplaatje bij WhatsApp/social (OG tags)</li>
+          <li><span class="icon-yes">&check;</span> Schema.org "Jeweler" met adres, telefoon, openingstijden</li>
+          <li><span class="icon-yes">&check;</span> Product-schema per sieraad (prijs, materiaal)</li>
+          <li><span class="icon-yes">&check;</span> Cookie-melding met keuze (accepteren/weigeren)</li>
+          <li><span class="icon-yes">&check;</span> FAQ-schema (6 veelgestelde vragen)</li>
         </ul>
       </div>
-    </div>
-
-    <div class="cta-block">
-      <h3>Wat betekent dit?</h3>
-      <p>Google kan de nieuwe site <strong>veel beter lezen en begrijpen</strong>. Elk sieraad kan apart gevonden worden. Als iemand zoekt op "handgemaakte gouden ring Schoonhoven", kan Google jouw sieraad tonen.</p>
     </div>
   </div>
 </section>
@@ -355,214 +264,152 @@
 <section class="slide" id="snelheid">
   <div class="slide-inner">
     <h3>Website snelheid</h3>
-    <h2>Google meet hoe snel je <span>website laadt</span></h2>
-    <p style="color:#999; margin-bottom:24px;">Langzame sites worden lager getoond in Google. Bezoekers haken af als een pagina langer dan 3 seconden laadt.</p>
+    <h2>Google Lighthouse <span>score (mobiel)</span></h2>
+    <p style="color:#999; margin-bottom:24px; font-size:0.9rem;">Google test automatisch elke website. Hogere score = beter zichtbaar.</p>
 
-    <div class="features">
-      <div class="feature">
-        <div class="feature-icon">🔤</div>
-        <h4>Lettertypen op eigen server</h4>
-        <p>Voorheen werden lettertypen geladen via Google (extra wachttijd). Nu staan ze op de eigen server, waardoor tekst direct verschijnt.</p>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:20px;">
+        <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">Snelheid</div>
+        <div style="display:flex; align-items:baseline; gap:8px;">
+          <span style="font-size:2rem; font-weight:700; color:#e05555;">48</span>
+          <span style="color:#666;">&rarr;</span>
+          <span style="font-size:2rem; font-weight:700; color:#50c878;">80</span>
+        </div>
+        <div style="font-size:0.75rem; color:#50c878; margin-top:4px;">+67%</div>
       </div>
-      <div class="feature">
-        <div class="feature-icon">🖼️</div>
-        <h4>Slimme afbeeldingen</h4>
-        <p>Foto's laden pas als je er naartoe scrollt ("lazy loading"). Dit bespaart data en maakt de eerste pagina sneller.</p>
+      <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:20px;">
+        <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">Toegankelijkheid</div>
+        <div style="font-size:2rem; font-weight:700; color:#50c878;">91</div>
+        <div style="font-size:0.75rem; color:#888; margin-top:4px;">Gelijk</div>
       </div>
-      <div class="feature">
-        <div class="feature-icon">📱</div>
-        <h4>Mobiel-vriendelijk</h4>
-        <p>Alle foto's passen zich automatisch aan de schermgrootte aan. Geen inzoomen of horizontaal scrollen nodig.</p>
+      <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:20px;">
+        <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">Technisch</div>
+        <div style="font-size:2rem; font-weight:700; color:#50c878;">96</div>
+        <div style="font-size:0.75rem; color:#888; margin-top:4px;">Gelijk</div>
       </div>
-      <div class="feature">
-        <div class="feature-icon">⚡</div>
-        <h4>Vooraf laden</h4>
-        <p>De belangrijkste afbeelding en lettertypen worden alvast geladen voordat de pagina klaar is ("preloading").</p>
+      <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:20px;">
+        <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">SEO</div>
+        <div style="font-size:2rem; font-weight:700; color:#50c878;">100</div>
+        <div style="font-size:0.75rem; color:#888; margin-top:4px;">Perfect</div>
       </div>
     </div>
 
-    <div class="compare" style="margin-top:40px;">
+    <div style="margin-top:24px; display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
+      <div style="background:rgba(80,200,120,0.06); border:1px solid rgba(80,200,120,0.15); border-radius:10px; padding:14px; text-align:center;">
+        <div style="font-size:0.65rem; color:#888; text-transform:uppercase; letter-spacing:1px;">Laadtijd</div>
+        <div style="font-size:0.85rem; margin-top:4px;"><span style="color:#e05555; text-decoration:line-through;">7,2s</span> &rarr; <strong style="color:#50c878;">4,3s</strong></div>
+      </div>
+      <div style="background:rgba(80,200,120,0.06); border:1px solid rgba(80,200,120,0.15); border-radius:10px; padding:14px; text-align:center;">
+        <div style="font-size:0.65rem; color:#888; text-transform:uppercase; letter-spacing:1px;">Interactief na</div>
+        <div style="font-size:0.85rem; margin-top:4px;"><span style="color:#e05555; text-decoration:line-through;">19,5s</span> &rarr; <strong style="color:#50c878;">4,7s</strong></div>
+      </div>
+      <div style="background:rgba(80,200,120,0.06); border:1px solid rgba(80,200,120,0.15); border-radius:10px; padding:14px; text-align:center;">
+        <div style="font-size:0.65rem; color:#888; text-transform:uppercase; letter-spacing:1px;">Speed Index</div>
+        <div style="font-size:0.85rem; margin-top:4px;"><span style="color:#e05555; text-decoration:line-through;">7,3s</span> &rarr; <strong style="color:#50c878;">1,8s</strong></div>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <p>De nieuwe site is <strong>4x sneller interactief</strong>. Reden: geen WordPress, lettertypen op eigen server, slim laden van afbeeldingen.</p>
+      <p style="margin-top:8px; font-size:0.8rem; color:#888;">Test zelf: <a href="https://pagespeed.web.dev" target="_blank" style="color:#cea057;">pagespeed.web.dev</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 7: Productpagina's -->
+<section class="slide" id="conversie">
+  <div class="slide-inner">
+    <h3>Productpagina's</h3>
+    <h2>Elk sieraad krijgt een <span>volwaardige pagina</span></h2>
+
+    <div class="compare">
       <div class="compare-card compare-card--old">
-        <div class="compare-label">Huidige site</div>
+        <div class="compare-label">Huidige site (WooCommerce)</div>
         <ul class="checklist">
-          <li><span class="icon-no">&times;</span> Lettertypen via Google CDN (extra wachttijd)</li>
-          <li><span class="icon-no">&times;</span> Alle afbeeldingen laden direct (langzaam)</li>
-          <li><span class="icon-no">&times;</span> Geen vooraf laden van belangrijke bestanden</li>
-          <li><span class="icon-no">&times;</span> WordPress overhead (veel ongebruikte code)</li>
-          <li><span class="icon-no">&times;</span> Google Analytics verouderd (geen data meer)</li>
+          <li><span class="icon-yes">&check;</span> Eigen pagina per sieraad</li>
+          <li><span class="icon-no">&times;</span> Geen prijs zichtbaar (alleen "contact")</li>
+          <li><span class="icon-no">&times;</span> Geen specificaties (materiaal, steen)</li>
+          <li><span class="icon-no">&times;</span> Geen Product-schema voor Google</li>
+          <li><span class="icon-no">&times;</span> Dezelfde CTA voor elk sieraad</li>
         </ul>
       </div>
       <div class="compare-card compare-card--new">
         <div class="compare-label">Nieuwe site</div>
         <ul class="checklist">
-          <li><span class="icon-yes">&check;</span> Lettertypen op eigen server (sneller)</li>
-          <li><span class="icon-yes">&check;</span> Afbeeldingen laden pas bij scrollen</li>
-          <li><span class="icon-yes">&check;</span> Kritieke bestanden worden vooraf geladen</li>
-          <li><span class="icon-yes">&check;</span> Geen WordPress, puur handgeschreven code</li>
-          <li><span class="icon-yes">&check;</span> Moderne analytics (GA4 + Clarity)</li>
+          <li><span class="icon-yes">&check;</span> Eigen pagina per sieraad</li>
+          <li><span class="icon-yes">&check;</span> Prijs zichtbaar (84 stuks) of "op aanvraag" (7 stuks)</li>
+          <li><span class="icon-yes">&check;</span> Specificaties: materiaal, steen, vervaardiging</li>
+          <li><span class="icon-yes">&check;</span> Product-schema (Google kan prijs + naam tonen)</li>
+          <li><span class="icon-yes">&check;</span> Slimme CTA: dure sieraden (&gt;€5.000) krijgen "Bel ons" knop</li>
         </ul>
       </div>
     </div>
 
-    <div style="margin-top:40px;">
-      <h3 style="margin-bottom:20px;">Google Lighthouse Score (mobiel)</h3>
-      <p style="color:#999; font-size:0.85rem; margin-bottom:24px;">Google test elke website automatisch op snelheid, toegankelijkheid en SEO. Hogere score = beter zichtbaar in Google.</p>
-
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-        <!-- Performance -->
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:20px;">
-          <div style="font-size:0.75rem; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">Snelheid</div>
-          <div style="display:flex; align-items:baseline; gap:8px;">
-            <span style="font-size:2rem; font-weight:700; color:#e05555;">48</span>
-            <span style="color:#666;">&rarr;</span>
-            <span style="font-size:2rem; font-weight:700; color:#50c878;">80</span>
-          </div>
-          <div style="background:rgba(255,255,255,0.06); border-radius:6px; height:8px; margin-top:8px; overflow:hidden;">
-            <div style="width:80%; height:100%; background:linear-gradient(90deg, #e05555 48%, #50c878 48%); border-radius:6px;"></div>
-          </div>
-          <div style="font-size:0.75rem; color:#50c878; margin-top:6px;">+67% sneller</div>
-        </div>
-        <!-- Accessibility -->
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:20px;">
-          <div style="font-size:0.75rem; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">Toegankelijkheid</div>
-          <div style="display:flex; align-items:baseline; gap:8px;">
-            <span style="font-size:2rem; font-weight:700; color:#50c878;">91</span>
-            <span style="color:#666;">&rarr;</span>
-            <span style="font-size:2rem; font-weight:700; color:#50c878;">91</span>
-          </div>
-          <div style="background:rgba(255,255,255,0.06); border-radius:6px; height:8px; margin-top:8px; overflow:hidden;">
-            <div style="width:91%; height:100%; background:#50c878; border-radius:6px;"></div>
-          </div>
-          <div style="font-size:0.75rem; color:#888; margin-top:6px;">Gelijk (was al goed)</div>
-        </div>
-        <!-- Best Practices -->
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:20px;">
-          <div style="font-size:0.75rem; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">Technische kwaliteit</div>
-          <div style="display:flex; align-items:baseline; gap:8px;">
-            <span style="font-size:2rem; font-weight:700; color:#50c878;">96</span>
-            <span style="color:#666;">&rarr;</span>
-            <span style="font-size:2rem; font-weight:700; color:#50c878;">96</span>
-          </div>
-          <div style="background:rgba(255,255,255,0.06); border-radius:6px; height:8px; margin-top:8px; overflow:hidden;">
-            <div style="width:96%; height:100%; background:#50c878; border-radius:6px;"></div>
-          </div>
-          <div style="font-size:0.75rem; color:#888; margin-top:6px;">Gelijk (was al goed)</div>
-        </div>
-        <!-- SEO -->
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:20px;">
-          <div style="font-size:0.75rem; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">SEO</div>
-          <div style="display:flex; align-items:baseline; gap:8px;">
-            <span style="font-size:2rem; font-weight:700; color:#50c878;">100</span>
-            <span style="color:#666;">&rarr;</span>
-            <span style="font-size:2rem; font-weight:700; color:#50c878;">100</span>
-          </div>
-          <div style="background:rgba(255,255,255,0.06); border-radius:6px; height:8px; margin-top:8px; overflow:hidden;">
-            <div style="width:100%; height:100%; background:#50c878; border-radius:6px;"></div>
-          </div>
-          <div style="font-size:0.75rem; color:#888; margin-top:6px;">Perfecte score</div>
+    <div class="improvements" style="margin-top:24px;">
+      <div class="improvement">
+        <div class="improvement-num">A</div>
+        <div>
+          <h4>25 sieraden boven €5.000: "Bel ons" CTA</h4>
+          <p>Dure aankopen doe je niet online. Deze sieraden tonen een prominente belknop met persoonlijk advies.</p>
         </div>
       </div>
-
-      <div style="margin-top:24px; display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
-        <div style="background:rgba(80,200,120,0.06); border:1px solid rgba(80,200,120,0.15); border-radius:10px; padding:14px; text-align:center;">
-          <div style="font-size:0.65rem; color:#888; text-transform:uppercase; letter-spacing:1px;">Laadtijd</div>
-          <div style="font-size:0.85rem; margin-top:4px;"><span style="color:#e05555; text-decoration:line-through;">7,2s</span> &rarr; <strong style="color:#50c878;">4,3s</strong></div>
+      <div class="improvement">
+        <div class="improvement-num">B</div>
+        <div>
+          <h4>66 sieraden onder €5.000: "Informeer" CTA</h4>
+          <p>Contactformulier met het sieraad al ingevuld als onderwerp. Plus email als alternatief.</p>
         </div>
-        <div style="background:rgba(80,200,120,0.06); border:1px solid rgba(80,200,120,0.15); border-radius:10px; padding:14px; text-align:center;">
-          <div style="font-size:0.65rem; color:#888; text-transform:uppercase; letter-spacing:1px;">Interactief na</div>
-          <div style="font-size:0.85rem; margin-top:4px;"><span style="color:#e05555; text-decoration:line-through;">19,5s</span> &rarr; <strong style="color:#50c878;">4,7s</strong></div>
-        </div>
-        <div style="background:rgba(80,200,120,0.06); border:1px solid rgba(80,200,120,0.15); border-radius:10px; padding:14px; text-align:center;">
-          <div style="font-size:0.65rem; color:#888; text-transform:uppercase; letter-spacing:1px;">Speed Index</div>
-          <div style="font-size:0.85rem; margin-top:4px;"><span style="color:#e05555; text-decoration:line-through;">7,3s</span> &rarr; <strong style="color:#50c878;">1,8s</strong></div>
+      </div>
+      <div class="improvement">
+        <div class="improvement-num">C</div>
+        <div>
+          <h4>3 vertrouwenssignalen onder elke CTA</h4>
+          <p>Certificaat van echtheid, persoonlijk advies, handgemaakt in Schoonhoven.</p>
         </div>
       </div>
     </div>
 
-    <div class="cta-block">
-      <h3>Resultaat</h3>
-      <p>De nieuwe site is <strong>4x sneller interactief</strong> dan de huidige site. De snelheidsscore ging van 48 naar 80 (van onvoldoende naar goed). Google beloont snelle sites met een hogere positie in de zoekresultaten.</p>
-      <p style="margin-top:12px; font-size:0.85rem; color:#888;">Test het zelf: open <a href="https://pagespeed.web.dev" target="_blank" style="color:#cea057;">pagespeed.web.dev</a> en vergelijk beide sites.</p>
+    <div style="margin-top:24px;">
+      <img src="assets/screenshots/new-pdp-desktop.png" alt="Productpagina desktop" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+      <p style="color:#666; font-size:0.75rem; text-align:center; margin-top:8px;">Productpagina: foto, specs, prijs, bel-CTA, trust signals</p>
     </div>
   </div>
 </section>
 
-<!-- SLIDE 7: CRO -->
-<section class="slide" id="conversie">
-  <div class="slide-inner">
-    <h3>Meer bezoekers &rarr; klanten</h3>
-    <h2>Veranderingen die zorgen voor <span>meer afspraken</span></h2>
-    <p style="color:#999; margin-bottom:32px;">Elke verbetering is gericht op &eacute;&eacute;n doel: dat een bezoeker contact opneemt of een afspraak maakt.</p>
-
-    <div class="improvements">
-      <div class="improvement">
-        <div class="improvement-num" style="background:rgba(80,200,120,0.1); border-color:rgba(80,200,120,0.3); color:#50c878;">A</div>
-        <div>
-          <h4>"Plan een afspraak" knop altijd zichtbaar</h4>
-          <p>Voorheen moest je scrollen om de knop te vinden. Nu staat hij direct in beeld, op elke pagina, op elk apparaat.</p>
-        </div>
-      </div>
-      <div class="improvement">
-        <div class="improvement-num" style="background:rgba(80,200,120,0.1); border-color:rgba(80,200,120,0.3); color:#50c878;">B</div>
-        <div>
-          <h4>Elk sieraad heeft een eigen pagina</h4>
-          <p>Bezoekers kunnen een sieraad bekijken met alle details (materiaal, prijs, beschrijving) en direct een afspraak inplannen.</p>
-        </div>
-      </div>
-      <div class="improvement">
-        <div class="improvement-num" style="background:rgba(80,200,120,0.1); border-color:rgba(80,200,120,0.3); color:#50c878;">C</div>
-        <div>
-          <h4>Vertrouwenssignalen</h4>
-          <p>"Meestergoudsmid", "Sinds 1980", "Gilde St. Eloy" badges geven direct vertrouwen. Bezoekers zien dat ze met een vakman te maken hebben.</p>
-        </div>
-      </div>
-      <div class="improvement">
-        <div class="improvement-num" style="background:rgba(80,200,120,0.1); border-color:rgba(80,200,120,0.3); color:#50c878;">D</div>
-        <div>
-          <h4>Makkelijk filteren in de collectie</h4>
-          <p>Bezoekers vinden sneller wat ze zoeken. Hoe sneller ze het juiste sieraad vinden, hoe sneller ze een afspraak maken.</p>
-        </div>
-      </div>
-      <div class="improvement">
-        <div class="improvement-num" style="background:rgba(80,200,120,0.1); border-color:rgba(80,200,120,0.3); color:#50c878;">E</div>
-        <div>
-          <h4>Telefoonnummer altijd bereikbaar</h4>
-          <p>Op mobiel staat het telefoonnummer in het menu. E&eacute;n tik en je belt direct. Geen zoeken meer.</p>
-        </div>
-      </div>
-      <div class="improvement">
-        <div class="improvement-num" style="background:rgba(80,200,120,0.1); border-color:rgba(80,200,120,0.3); color:#50c878;">F</div>
-        <div>
-          <h4>Professionele uitstraling</h4>
-          <p>Cookie-melding, privacyverklaring en technische verbeteringen laten zien dat de site serieus en betrouwbaar is.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SLIDE 8: Live vergelijken -->
+<!-- SLIDE 8: Screenshots -->
 <section class="slide" id="vergelijk">
   <div class="slide-inner">
-    <h3>Bekijk het zelf</h3>
-    <h2>Oude site vs. <span>nieuwe site</span></h2>
-    <p style="color:#999; margin-bottom:24px;">Hieronder staan beide websites naast elkaar. Scroll door beide versies om het verschil te zien.</p>
+    <h3>Bekijk het verschil</h3>
+    <h2>Nieuwe site in <span>beeld</span></h2>
 
-    <div class="site-frames">
-      <div class="site-frame">
-        <div class="site-frame-label site-frame-label--old">Huidige site &middot; wiewelgoudsmeden.nl</div>
-        <iframe src="https://wiewelgoudsmeden.nl" loading="lazy" title="Huidige website"></iframe>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin:24px 0;">
+      <div>
+        <img src="assets/screenshots/new-mobile-hero.png" alt="Mobiele hero" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#888; font-size:0.75rem; text-align:center; margin-top:8px;">Mobiel: hero met foto + CTAs</p>
       </div>
-      <div class="site-frame">
-        <div class="site-frame-label site-frame-label--new">Nieuwe site &middot; preview</div>
-        <iframe src="https://erikpvisser81-naarden.github.io/wiewelgoudsmeden.nl/" loading="lazy" title="Nieuwe website"></iframe>
+      <div>
+        <img src="assets/screenshots/new-collectie-filter.png" alt="Collectie filter" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#888; font-size:0.75rem; text-align:center; margin-top:8px;">Collectie: filter op Ringen</p>
+      </div>
+      <div>
+        <img src="assets/screenshots/new-pdp-cta.png" alt="Product CTA" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#888; font-size:0.75rem; text-align:center; margin-top:8px;">Productpagina: bel-CTA</p>
       </div>
     </div>
 
-    <p style="color:#666; font-size:0.8rem; text-align:center; margin-top:12px;">
-      Tip: open beide links in je browser om de volledige ervaring te zien<br>
-      <strong>Huidig:</strong> <a href="https://wiewelgoudsmeden.nl" target="_blank" style="color:#e05555;">wiewelgoudsmeden.nl</a> &nbsp;&middot;&nbsp;
-      <strong>Nieuw:</strong> <a href="https://erikpvisser81-naarden.github.io/wiewelgoudsmeden.nl/" target="_blank" style="color:#50c878;">preview link</a>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0;">
+      <div>
+        <img src="assets/screenshots/new-homepage-desktop.png" alt="Homepage desktop" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#888; font-size:0.75rem; text-align:center; margin-top:8px;">Homepage desktop</p>
+      </div>
+      <div>
+        <img src="assets/screenshots/new-collectie-desktop.png" alt="Collectie desktop" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#888; font-size:0.75rem; text-align:center; margin-top:8px;">Collectie desktop</p>
+      </div>
+    </div>
+
+    <p style="color:#666; font-size:0.8rem; text-align:center; margin-top:16px;">
+      Zelf bekijken: <a href="https://erikpvisser81-naarden.github.io/wiewelgoudsmeden.nl/" target="_blank" style="color:#50c878;">preview link</a>
     </p>
   </div>
 </section>
@@ -570,51 +417,43 @@
 <!-- SLIDE 9: Samenvatting -->
 <section class="slide slide--title" id="samenvatting">
   <div class="slide-inner">
-    <h2>In het kort</h2>
-    <div class="stats" style="margin-bottom:40px;">
+    <h2>Samenvatting</h2>
+    <div class="stats" style="margin-bottom:32px;">
       <div class="stat">
-        <div class="stat-number">99</div>
-        <div class="stat-label">Pagina's gebouwd</div>
+        <div class="stat-number">48&rarr;80</div>
+        <div class="stat-label">Google snelheidsscore</div>
       </div>
       <div class="stat">
-        <div class="stat-number">91</div>
-        <div class="stat-label">Sieraden met eigen pagina</div>
+        <div class="stat-number">4x</div>
+        <div class="stat-label">Sneller interactief</div>
       </div>
       <div class="stat">
-        <div class="stat-number">7</div>
-        <div class="stat-label">Categorie&euml;n met filter</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">8</div>
-        <div class="stat-label">SEO-verbeteringen</div>
+        <div class="stat-number">100</div>
+        <div class="stat-label">SEO score</div>
       </div>
     </div>
 
-    <div style="text-align:left; max-width:600px; margin:0 auto;">
+    <div style="text-align:left; max-width:560px; margin:0 auto;">
       <ul class="checklist">
-        <li><span class="icon-yes">&check;</span> Website werkt perfect op telefoons en tablets</li>
-        <li><span class="icon-yes">&check;</span> Collectie is filterbaar op categorie</li>
-        <li><span class="icon-yes">&check;</span> Elk sieraad heeft een eigen pagina</li>
-        <li><span class="icon-yes">&check;</span> Google kan alles goed lezen en indexeren</li>
-        <li><span class="icon-yes">&check;</span> Snellere laadtijd (lettertypen + afbeeldingen)</li>
-        <li><span class="icon-yes">&check;</span> Cookie-melding en privacyverklaring (wettelijk verplicht)</li>
+        <li><span class="icon-yes">&check;</span> Mobiel volledig vernieuwd (hero, menu, knoppen)</li>
+        <li><span class="icon-yes">&check;</span> Collectie: visuele filters, geen paginering meer</li>
+        <li><span class="icon-yes">&check;</span> Google: Juwelier-schema, OG tags, Product-schema</li>
+        <li><span class="icon-yes">&check;</span> 4x sneller (geen WordPress, eigen lettertypen)</li>
+        <li><span class="icon-yes">&check;</span> Cookie-melding + privacyverklaring (AVG)</li>
         <li><span class="icon-yes">&check;</span> "Plan een afspraak" altijd zichtbaar</li>
-        <li><span class="icon-yes">&check;</span> Professionele, betrouwbare uitstraling</li>
       </ul>
     </div>
 
-    <div class="cta-block" style="margin-top:40px;">
+    <div class="cta-block" style="margin-top:32px;">
       <h3>Volgende stappen</h3>
-      <p style="text-align:left; max-width:500px; margin:0 auto;">
+      <p style="text-align:left; max-width:400px; margin:0 auto;">
         1. Bekijk de preview en geef feedback<br>
-        2. Laatste aanpassingen doorvoeren<br>
-        3. Nieuwe site live zetten op wiewelgoudsmeden.nl<br>
-        4. Google Search Console instellen (gratis)<br>
-        5. Bezoekersstatistieken bijhouden
+        2. Aanpassingen doorvoeren<br>
+        3. Live zetten op wiewelgoudsmeden.nl
       </p>
     </div>
 
-    <p class="meta" style="margin-top:40px;">Vragen? Neem contact op &middot; Erik Visser &middot; JouwPraktijkWebsite.nl</p>
+    <p class="meta" style="margin-top:32px;">Erik Visser &middot; JouwPraktijkWebsite.nl</p>
   </div>
 </section>
 
