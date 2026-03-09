@@ -1700,6 +1700,7 @@ body { padding-top: 72px; }
     max-height: 400px;
     order: 1;
   }
+  .trust-bar { display: none; }
   .hero--about { height: clamp(280px, 40vh, 400px); }
   .cat-grid { grid-template-columns: repeat(2, 1fr); }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
